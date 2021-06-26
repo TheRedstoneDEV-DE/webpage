@@ -4,8 +4,25 @@
       function dl(){
         window.open("https://github.com/TheDeveloper3/webpage/raw/main/LiviLP-Installer.jar");
       }
+      function dlani(){
+      var myDiv = document.getElementById("dl");
+        while (true){
+      myDiv.innerHTML = "Downloading..";
+       myDiv.innerHTML = "Downloading.";
+       myDiv.innerHTML = "Downloading..";
+       myDiv.innerHTML = "Downloading...";
+       myDiv.innerHTML = "Downloading..";
+       myDiv.innerHTML = "Downloading.";
+       myDiv.innerHTML = "Downloading..";
+       myDiv.innerHTML = "Downloading...";
+       myDiv.innerHTML = "Downloading..";
+       myDiv.innerHTML = "Downloading.";
+       myDiv.innerHTML = "Downloading..";
+        }
+      }
     </script>
   </head>
   <body onload="dl()">
+    <div id="dl" onload="dlani()"></div>
   </body>
 </html>
