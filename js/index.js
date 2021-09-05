@@ -53,15 +53,6 @@ function translateSite(){
   lang = document.getElementById("langselector").value;
 
   if (lang=="de"){
-    if (width > 500 && height > 800){
-    document.getElementById("change").onclick = "";
-    document.getElementById("change1").onclick = "";
-    document.getElementById("change").addEventListener('click',gotoTW,false)
-    document.getElementById("change1").addEventListener('click',gotoYT,false)
-    document.getElementById("btn_aboutMe").innerHTML="Über Mich";
-  }else{
-    setTimeout(changeTextSize2M,1000);
-  }
     document.getElementById("headline").innerHTML="Wilkommen <br> auf der Webseite von TheRedstoneDEV_DE";
     document.getElementById("h1DC").innerHTML="Mein Discord Server";
     document.getElementById("text_DC").innerHTML="Wenn das widget nicht funktioniert könnt <br> ihr auch über diesen button joinen:";
@@ -70,6 +61,15 @@ function translateSite(){
     document.getElementById("AboutText").innerHTML="Hallo, ich bin ein erfahrener Java <br>Programmierer, Youtuber und Twitch Streamer.<br> Ich komme aus Deutschland und <br>Spiele meistens Minecraft oder Portal.<br>Wenn du beim Aufürhen/Nutzen meiner<br> Programme Hilfe brauchst kannst du mich über Discord Kontaktieren, <br>eine GitHub Issue erstellen oder unter dem Neuesten Youtube Video einen<br> Kommentar hinterlassen, damit ich dir helfen kann.<br>Ich bin ein erfahrener Linux nutzer, also wenn du ein<br> Mac oder Windows Benutzer <br> bist, kann es sein, dass sich <br>einige Buttons und labels veschieben. Wenn <br> dies auftritt, informiere mich bitte darüber!<br><br>ACHTUNG: Es kann sein dass es auf Anderen <br> Plattformen wie Instagram, Facebook usw. Nutzer mit dem <br>Selben Namen gibt,<br> dass bin in dem Falle NICHT ich! Es sind <br>einfach nur Leute die <br>diesen Namen verwenden! Mein Kanal und Andere Plattformen, <br> auf denen ich aktiv bin sind unten zu finden!";
     document.getElementById("YT").innerHTML="<h1>Youtube</h1><h3>Mein Youtube Kanal: <a href='#'>#</a><br>Auf dem kommen Folgen <br> zum Programmieren, aber auch Gaming-Videos!";
     document.getElementById("TW").innerHTML="<h1>Twitch</h1><h3>Mein Kanal: <a href='#'>#</a><br>Hier kommen einfach Livestreams!";
+if (width > 500 && height > 800){
+    document.getElementById("change").onclick = "";
+    document.getElementById("change1").onclick = "";
+    document.getElementById("change").addEventListener('click',gotoTW,false)
+    document.getElementById("change1").addEventListener('click',gotoYT,false)
+    document.getElementById("btn_aboutMe").innerHTML="Über Mich";
+  }else{
+    setTimeout(changeTextSize2M,1000);
+  }
 
   }else{
   }
