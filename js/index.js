@@ -60,7 +60,7 @@ function translateSite(){
     document.getElementById("change1").addEventListener('click',gotoYT,false)
     document.getElementById("btn_aboutMe").innerHTML="Über Mich";
   }else{
-    changeTextSize2M();
+    setTimeout(changeTextSize2M,1000);
   }
     document.getElementById("headline").innerHTML="Wilkommen <br> auf der Webseite von TheRedstoneDEV_DE";
     document.getElementById("h1DC").innerHTML="Mein Discord Server";
