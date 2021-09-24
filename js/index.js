@@ -7,7 +7,7 @@ function main() {
 }
 function getLang(){
   var diagbox=document.getElementById("diagbox");
-  diagbox.innerHTML="<h3>Please select the Language you're speaking:<br><br><select id='langselector'><option value='de'>German(Deutsch)</option><option value='en'>English(Englisch)</option></select><br><br><a onclick='translateSite()'><br><button>View Page</button></a></h3>";
+  diagbox.innerHTML="<h3>Please select the Language you're speaking:<br><br><select id='langselector'><option value='de'>German(Deutsch)</option><option value='en'>English(Englisch)</option></select><br><br><br><br><br><a onclick='translateSite()'><br><button>View Page</button></a></h3>";
   $( "#diagbox" ).dialog({
 				close: function( event, ui ) {wipe();}
 	});
