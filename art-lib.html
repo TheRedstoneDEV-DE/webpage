@@ -28,13 +28,12 @@
                 </div>
                 <h3>### Music</h3>
                 <div class="audioplayer">
-                    <a onclick="play_pause()" id="control1"
-                        style="margin-right: 0.5%; margin-left: 0.5%; cursor: pointer;"></a> Soundtrack07.mp3 <span
-                        class="bar"><span class="progress" id="progress1" style="width: 0"></span></span>
-                    <audio controls style="display: none;" id="audio1">
+                    <a onclick="play_pause(0)" class="control-js"></a> Soundtrack07.mp3 <br class="mobile">
+                        <span class="time-js">00:00:00</span> <br class="mobile"> <input class="progress-js" type="range" max="100" value="0"><br class="mobile"><span class="time-left-js">00:00:00</span>
+                    <audio controls style="display: none;" class="audio-js">
                         <source src="res/Projekt.mp3" type="audio/mp3">
                     </audio>
-                    <script src="js/script.js"></script>
+                    <script src="js/player.js"></script>
                 </div>
     </div>
     <div class="links section">
@@ -46,7 +45,7 @@
             <li><a class="lnk" href="https://github.com/TheRedstoneDEV-DE/dotfiles">[Dotfiles]</a>
             <li><a class="lnk" href="credits.html">[Credits]</a></li>
             <li><a class="lnk inactive" href="art-lib.html">[Art libraray]</a>
-            <li><a class="lnk inactive" href="">[Podcasts (to be added)]</a>
+            <li><a class="lnk" href="podcasts.html">[Podcasts]</a>
             <li><a class="lnk" href=impressum.html>[Impressum]</a>
         </ul>
     </div>

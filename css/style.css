@@ -158,8 +158,10 @@ img.artwork:hover, .artwork:focus {
 
 .audioplayer {
     color: #00cdcd;
+    text-align: center;
     margin-left: 2%;
     padding: 10px;
+    padding-bottom: 13px;
     margin-right: 11%;
     border: solid #00aeae 1px;
 }
@@ -187,6 +189,28 @@ body {
 .footer {
     font-size: small;
     color: #00a1a1;
+}
+
+.progress-js {
+    margin-top: 0px;
+    margin-bottom: -4px;
+    margin-left: 1%;
+    width: 40%;
+}
+.time-js {
+    margin-left: 2%;
+}
+
+.time-left-js {
+    margin-left: 2%;
+}
+
+.mobile {
+    display: none;
+}
+
+.control-js {
+    margin-right: 0.5%; margin-left: 0; cursor: pointer;
 }
 
 @keyframes flickerAnimation {
@@ -257,10 +281,6 @@ body {
     91% {
         opacity: 1;
     }
-
-    98% {
-        opacity: 1;
-    }
     
     100% {
         opacity: 0;
@@ -293,7 +313,22 @@ body {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 857px) {
+    .mobile{
+        display: inline-block;
+    }
+    .progress-js {
+        width: 95%;
+    }
+    .audioplayer {
+        text-align: center;
+    }
+    .control-js {
+        margin-right: 65%; margin-left: 0; cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 670px) {
     a.icon {
         width: 70px;
     }
@@ -303,5 +338,17 @@ body {
     }
     .information {
         word-wrap: break-word;
+    }
+    .mobile{
+        display: inline-block;
+    }
+    .progress-js {
+        width: 95%;
+    }
+    .audioplayer {
+        text-align: center;
+    }
+    .control-js {
+        margin-right: 10%; margin-left: 0; cursor: pointer;
     }
 }
