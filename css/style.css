@@ -171,6 +171,7 @@ img.artwork:hover, .artwork:focus {
 .text {
     display: block;
     color: #009a9a;
+    text-align: justify;
     margin-left: 1%;
     margin-right: 10%;
 }
