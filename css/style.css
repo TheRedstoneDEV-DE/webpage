@@ -130,7 +130,7 @@ img.artwork:hover, .artwork:focus {
     transition: 0.5s;
     position: relative;
     z-index: 8;
-    transform: scale(2);
+    transform: scale(1.65);
 }
 
 .bar {

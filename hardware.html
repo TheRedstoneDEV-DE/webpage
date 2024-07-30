@@ -1,152 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheRedstoneDEV_DE - Hardware</title>
 </head>
+
 <body>
     <div class="center head">
         <h1>TheRedstoneDEV_DE</h1>
         <h5>##### References ######</h4>
-        <a class="icon" href="https://team.devellight.space:8096/TheRedstoneDEV_DE"><span class="icon"></span></a>
-        <a class="icon" href="https://github.com/theredstonedev-de"><span class="icon"></span></a>
-        <a class="icon" href="https://www.youtube.com/@theredstonedev_de5808"><span class="icon"></span></a>
-        <a class="icon" href="https://devellight.space/@theredstonedev_de"><span class="icon">󰫑</span></a>
+            <a class="icon" href="https://team.devellight.space:8096/TheRedstoneDEV_DE"><span class="icon"></span></a>
+            <a class="icon" href="https://github.com/theredstonedev-de"><span class="icon"></span></a>
+            <a class="icon" href="https://www.youtube.com/@theredstonedev_de5808"><span class="icon"></span></a>
+            <a class="icon" href="https://devellight.space/@theredstonedev_de"><span class="icon">󰫑</span></a>
     </div>
     <div class="hw section">
         <a href="index.html" class="lnk">[<- Home]</a>
-        <h2>## Hardware</h2>
-        <h3>### Homelab</h3>
-        <div class="homelab subsection">
-            <h4>#### Server 1: The NAS</h3>
-            <ul>
-                <li>OS: Fedora Server 40</li>
-                <li>CPU: Intel N100</li>
-                <li>GPU: integrated [no dGPU]</li>
-                <li>Memory: 8GB [DDR5]</li>
-                <li>Networking: 4x 2.5GbE [Onboard]</li>
-                <li>Drive configuration:</li>
-                <ul>
-                    <li>2x 4TB WD HDDs [RAID-1] [HOTSWAP]: used for backups</li>
-                    <li>2TB WD NVMe SSD: used for my Steam library</li>
-                    <li>256GB NVMe SSD: boot drive</li>
-                    <li>512GB SATA SSD [HOTSWAP]: service data</li>
-                </ul>
-                <li>Services:</li>
-                <ul>
-                    <li>Pi Hole</li>
-                    <li>Navidrome</li>
-                    <li>Jellyfin</li>
-                    <li>(ethernet switch / firewall for the other servers)</li>
-                    <li>sshfs</li>
-                </ul>
-            </ul>
-            <h4>#### Server 2: The VM Host</h3>
-            <ul>
-                <li>OS: Ubuntu Server 22.04</li>
-                <li>CPU: AMD Ryzen 5 3600</li>
-                <li>GPU: NVidia RTX 3060 12GB</li>
-                <li>Memory: 32GB [DDR4 3200]</li>
-                <li>Networking: 1x 1GbE [Onboard]</li>
-                <li>Drive configuration:</li>
-                <ul>
-                    <li>512GB WD NVMe SSD: boot drive</li>
-                    <li>512GB SATA SSD: VM data</li>
-                </ul>
-                <li>Services:</li>
-                <ul>
-                    <li>Libvirtd</li>
-                    <li>Game-servers</li>
-                </ul>
-            </ul>
-            <h4>#### Server 3: The Remote Workstation</h3>
-            <ul>
-                <li>OS: Nobara 40</li>
-                <li>CPU: AMD Ryzen 5 2600</li>
-                <li>GPU: NVidia RTX 3060 12GB</li>
-                <li>Memory: 16GB [DDR4 2666]</li>
-                <li>Networking: 1x 1GbE [Onboard]</li>
-                <li>Drive configuration:</li>
-                <ul>
-                    <li>60GB SATA SSD: boot drive</li>
-                    <li>300GB SATA HDD: misc. data</li>
-                </ul>
-                <li>Services:</li>
-                <ul>
-                    <li>Sunshine</li>
-                    <li>OBS-Studio (Streaming/Recording the main workstation)</li>
-                </ul>
-            </ul>
-        </div>
-        <h3>### Workstation</h3>
-        <div class="workstation subsection">
-            <ul>
-                <li>OS: NixOS</li>
-                <li>CPU: AMD Ryzen 7 5700X [+PBO]</li>
-                <li>GPU: AMD RX 6750XT [+reBAR]</li>
-                <li>Memory: 96GB [DDR4 2666]</li>
-                <li>Networking:</li>
-                <ul>
-                    <li>1x 1GbE [Onboard]</li>
-                    <li>1x 2.5GbE</li>
-                </ul>
-                <li>Drive configuration:</li>
-                <ul>
-                    <li>512GB NVMe SSD: home drive</li>
-                    <li>1TB WD HDD: misc. data, software projects</li>
-                    <li>256GB SSD: boot drive</li>
-                </ul>
-                <li>Usage:</li>
-                <ul>
-                    <li>3D-Modeling + Texturing (Blender)</li>
-                    <li>Software development</li>
-                    <li>Video editing</li>
-                    <li>Software compiling + testing (for contributions to nixpkgs / other projects)</li>
-                </ul>
-            </ul>
-        </div>
-        <h3>### Mobile Workstation(s)</h3>
-        <div class="mobile-workstations subsection">
-            <h4>#### Lenovo Thinkpad X280</h4>
-            <ul>
-                <li>OS: NixOS</li>
-                <li>CPU: Intel i7 8550U</li>
-                <li>GPU: integrated</li>
-                <li>Memory: 16 GB [DDR4 2400]</li>
-                <li>Storage: 256GB NVMe SSD</li>
-            </ul>
-            <h4>#### HP 255 G8</h4>
-            <ul>
-                <li>OS: NixOS</li>
-                <li>CPU: Ryzen 5 5500U</li>
-                <li>GPU: integrated</li>
-                <li>Memory: 32 GB [DDR4 3200]</li>
-                <li>Storage: 512GB NVMe SSD</li>
-            </ul>
-            <h4>#### Tuxedo Gemini 15 Gen. 2</h4>
-            <ul>
-                <li>OS: NixOS</li>
-                <li>CPU: Intel i9 13900HX</li>
-                <li>GPU: NVidia RTX 4060 8GB</li>
-                <li>Memory: 32 GB [DDR5 5600]</li>
-                <li>Storage: 1TB NVMe SSD</li>
-            </ul>
-        </div>
+                <h2>## Hardware</h2>
+                <h3>### Homelab</h3>
+                <div class="homelab subsection">
+                    <h4>#### Server 1: The NAS</h3>
+                        <ul>
+                            <li>OS: Fedora Server 40</li>
+                            <li>CPU: Intel N100</li>
+                            <li>GPU: integrated [no dGPU]</li>
+                            <li>Memory: 8GB [DDR5]</li>
+                            <li>Networking: 4x 2.5GbE [Onboard]</li>
+                            <li>Drive configuration:</li>
+                            <ul>
+                                <li>2x 4TB WD HDDs [RAID-1] [HOTSWAP]: used for backups</li>
+                                <li>2TB WD NVMe SSD: used for my Steam library</li>
+                                <li>256GB NVMe SSD: boot drive</li>
+                                <li>512GB SATA SSD [HOTSWAP]: service data</li>
+                            </ul>
+                            <li>Services:</li>
+                            <ul>
+                                <li>Pi Hole</li>
+                                <li>Navidrome</li>
+                                <li>Jellyfin</li>
+                                <li>(ethernet switch / firewall for the other servers)</li>
+                                <li>sshfs</li>
+                            </ul>
+                        </ul>
+                        <h4>#### Server 2: The VM Host</h3>
+                            <ul>
+                                <li>OS: Ubuntu Server 22.04</li>
+                                <li>CPU: AMD Ryzen 5 3600</li>
+                                <li>GPU: NVidia RTX 3060 12GB</li>
+                                <li>Memory: 32GB [DDR4 3200]</li>
+                                <li>Networking: 1x 1GbE [Onboard]</li>
+                                <li>Drive configuration:</li>
+                                <ul>
+                                    <li>512GB WD NVMe SSD: boot drive</li>
+                                    <li>512GB SATA SSD: VM data</li>
+                                </ul>
+                                <li>Services:</li>
+                                <ul>
+                                    <li>Libvirtd</li>
+                                    <li>Game-servers</li>
+                                </ul>
+                            </ul>
+                            <h4>#### Server 3: The Remote Workstation</h3>
+                                <ul>
+                                    <li>OS: Nobara 40</li>
+                                    <li>CPU: AMD Ryzen 5 2600</li>
+                                    <li>GPU: NVidia RTX 3060 12GB</li>
+                                    <li>Memory: 16GB [DDR4 2666]</li>
+                                    <li>Networking: 1x 1GbE [Onboard]</li>
+                                    <li>Drive configuration:</li>
+                                    <ul>
+                                        <li>60GB SATA SSD: boot drive</li>
+                                        <li>300GB SATA HDD: misc. data</li>
+                                    </ul>
+                                    <li>Services:</li>
+                                    <ul>
+                                        <li>Sunshine</li>
+                                        <li>OBS-Studio (Streaming/Recording the main workstation)</li>
+                                    </ul>
+                                </ul>
+                </div>
+                <h3>### Workstation</h3>
+                <div class="workstation subsection">
+                    <ul>
+                        <li>OS: NixOS</li>
+                        <li>CPU: AMD Ryzen 7 5700X [+PBO]</li>
+                        <li>GPU: AMD RX 6750XT [+reBAR]</li>
+                        <li>Memory: 96GB [DDR4 2666]</li>
+                        <li>Networking:</li>
+                        <ul>
+                            <li>1x 1GbE [Onboard]</li>
+                            <li>1x 2.5GbE</li>
+                        </ul>
+                        <li>Drive configuration:</li>
+                        <ul>
+                            <li>512GB NVMe SSD: home drive</li>
+                            <li>1TB WD HDD: misc. data, software projects</li>
+                            <li>256GB SSD: boot drive</li>
+                        </ul>
+                        <li>Usage:</li>
+                        <ul>
+                            <li>3D-Modeling + Texturing (Blender)</li>
+                            <li>Software development</li>
+                            <li>Video editing</li>
+                            <li>Software compiling + testing (for contributions to nixpkgs / other projects)</li>
+                        </ul>
+                    </ul>
+                </div>
+                <h3>### Mobile Workstation(s)</h3>
+                <div class="mobile-workstations subsection">
+                    <h4>#### Lenovo Thinkpad X280</h4>
+                    <ul>
+                        <li>OS: NixOS</li>
+                        <li>CPU: Intel i7 8550U</li>
+                        <li>GPU: integrated</li>
+                        <li>Memory: 16 GB [DDR4 2400]</li>
+                        <li>Storage: 256GB NVMe SSD</li>
+                    </ul>
+                    <h4>#### HP 255 G8</h4>
+                    <ul>
+                        <li>OS: NixOS</li>
+                        <li>CPU: Ryzen 5 5500U</li>
+                        <li>GPU: integrated</li>
+                        <li>Memory: 32 GB [DDR4 3200]</li>
+                        <li>Storage: 512GB NVMe SSD</li>
+                    </ul>
+                    <h4>#### Tuxedo Gemini 15 Gen. 2</h4>
+                    <ul>
+                        <li>OS: NixOS</li>
+                        <li>CPU: Intel i9 13900HX</li>
+                        <li>GPU: NVidia RTX 4060 8GB</li>
+                        <li>Memory: 32 GB [DDR5 5600]</li>
+                        <li>Storage: 1TB NVMe SSD</li>
+                    </ul>
+                </div>
     </div>
     <div class="links section">
         <h2>## Local References</h2>
         <ul>
-          <li><a href="index.html" class="lnk">[<- Home]</a></li>
-          <li><a class="lnk inactive" href="">[Blog (to be added)]</a>
-          <li><a class="lnk inactive" href="hardware.html">[Hardware]</a>
-          <li><a class="lnk" href="https://github.com/TheRedstoneDEV-DE/dotfiles">[Dotfiles]</a>
-          <li><a class="lnk" href="art-lib.html">[Art library]</a>
-          <li><a class="lnk inactive" href="">[Podcasts (to be added)]</a>
-          <li><a class="lnk" href="impressum.html">[Impressum]</a>
+            <li><a href="index.html" class="lnk">[<- Home]</a></li>
+            <li><a class="lnk inactive" href="">[Blog (to be added)]</a>
+            <li><a class="lnk inactive" href="hardware.html">[Hardware]</a>
+            <li><a class="lnk" href="https://github.com/TheRedstoneDEV-DE/dotfiles">[Dotfiles]</a>
+            <li><a class="lnk" href="credits.html">[Credits]</a></li>
+            <li><a class="lnk" href="art-lib.html">[Art library]</a>
+            <li><a class="lnk inactive" href="">[Podcasts (to be added)]</a>
+            <li><a class="lnk" href="impressum.html">[Impressum]</a>
         </ul>
-      </div>
-      <div class="footer center">Robert Richter. All rights reserved. &copy 2024</div>
+    </div>
+    <div class="footer center">Robert Richter. All rights reserved. &copy 2024</div>
 </body>
+
 </html>
