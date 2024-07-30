@@ -183,6 +183,10 @@ body {
     background-image: url(../res/graphy-dark.png);
 }
 
+.footer {
+    font-size: small;
+}
+
 @keyframes flickerAnimation {
     0% {
         opacity: 1;
