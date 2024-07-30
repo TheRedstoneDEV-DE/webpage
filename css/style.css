@@ -185,6 +185,7 @@ body {
 
 .footer {
     font-size: small;
+    color: #00a1a1;
 }
 
 @keyframes flickerAnimation {
