@@ -182,7 +182,7 @@ img.artwork:hover, .artwork:focus {
 body {
     font-size: 1.2em;
     font-variant: normal;
-    font-family: 'custom-font';
+    font-family: 'custom-font', Hack, monospace;
     background-color: #001313;
     background-image: url(../res/graphy-dark.png);
 }
